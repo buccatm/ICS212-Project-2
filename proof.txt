@@ -1,0 +1,1580 @@
+Script started on Sat 18 Apr 2020 01:35:08 PM HST
+]0;buccatm@uhx02:~/project1[?1034huhx02:/home/b/buccatm/project1% git checkout Project1
+Switched to branch 'Project1'
+]0;buccatm@uhx02:~/project1uhx02:/home/b/buccatm/project1% sh getreport.sh
+* f23b7ec [31m (project2) [32m2020-04-18 [34mMarcos Buccat Jr [mMade the copy constrcutor only to copy data from maina list. And be able to print all of its data only in debugmode
+* a5d91f0 [31m [32m2020-04-16 [34mMarcos Buccat Jr [mImplemented The Copy Constructor
+* 2168d24 [31m [32m2020-04-14 [34mMarcos Buccat Jr [mSmall changes to the interface. still uses default contstructor
+* ed8f8e1 [31m [32m2020-04-14 [34mMarcos Buccat Jr [mChanged reverese so that it returns the new starting address rather than the address of the last element of list
+* 027c4ee [31m [32m2020-04-13 [34mMarcos Buccat Jr [mCopied files from proj 2
+* 10c4b67 [31m [32m2020-04-13 [34mMarcos Buccat Jr [mRenamed Files
+* 6a63668 [31m (HEAD, Project1) [32m2020-03-17 [34mMarcos Buccat Jr [mAdded a message for addfile
+* 69e79bb [31m [32m2020-03-14 [34mMarcos Buccat Jr [mFixed most of the checkstlye errors
+* 72f9162 [31m [32m2020-03-14 [34mMarcos Buccat Jr [mFixed a bug
+* 2677797 [31m [32m2020-03-14 [34mMarcos Buccat Jr [mTypo in getreport.sh
+* 6bad449 [31m (master) [32m2020-03-14 [34mMarcos Buccat Jr [mProject 1
+# On branch Project1
+nothing to commit, working directory clean
+total 204
+drwxr-xr-x.  3 buccatm uh  4096 Apr 18 13:35 .
+drwx-----x. 24 buccatm uh  8192 Apr 18 13:32 ..
+-rw-r--r--.  1 buccatm uh    39 Apr 16 19:22 add.txt
+-rw-r--r--.  1 buccatm uh   355 Apr 18 13:32 Copy_Data.txt
+-rw-r--r--.  1 buccatm uh 30243 Apr 18 13:35 database.c
+-rw-r--r--.  1 buccatm uh  1030 Apr 18 13:35 database.h
+-rw-r--r--.  1 buccatm uh   388 Apr 18 13:32 default.txt
+-rwxr-xr-x.  1 buccatm uh   154 Mar 14 11:59 getreport.sh
+drwxr-xr-x.  8 buccatm uh   166 Apr 18 13:35 .git
+-rw-r--r--.  1 buccatm uh    47 Mar 14 11:41 .gitignore
+-rw-r--r--.  1 buccatm uh 14376 Apr 18 13:32 llist.o
+-rw-r--r--.  1 buccatm uh   263 Apr 18 13:35 Makefile
+-rwxr-xr-x.  1 buccatm uh 28312 Apr 18 13:32 project
+-rwxr-xr-x.  1 buccatm uh 40752 Apr 18 13:32 project_debug
+-rw-r--r--.  1 buccatm uh     0 Apr 18 13:35 proof.txt
+-rw-r--r--.  1 buccatm uh   649 Apr 18 13:35 record.h
+-rw-r--r--.  1 buccatm uh 22215 Apr 18 13:35 user_interface.c
+-rw-r--r--.  1 buccatm uh 14336 Apr 18 13:32 user-interface.o
+gcc -ansi -pedantic-errors -Wall -c database.c
+gcc -ansi -pedantic-errors -Wall -c user_interface.c
+gcc -o project database.o user_interface.o
+]0;buccatm@uhx02:~/project1uhx02:/home/b/buccatm/project1% ./project
+
+	The Bank Interface
+Welcome to the Bank Menue
+
+Enter the following options
+	Enter '1' to add a record
+	Enter '2' to print a record
+	Enter '3' to print all records
+	Enter '4' to modify a record
+	Enter '5' to remove a record
+	Enter '6' to exit the program
+
+Enter an option: 3
+
+RECORD #1
+Accountno: 9873
+Name: name one
+Address: address
+one
+here
+hon
+hi
+
+Number of Records in list: 1
+
+Enter the following options
+	Enter '1' to add a record
+	Enter '2' to print a record
+	Enter '3' to print all records
+	Enter '4' to modify a record
+	Enter '5' to remove a record
+	Enter '6' to exit the program
+
+Enter an option: 6
+
+
+	Exiting program
+]0;buccatm@uhx02:~/project1uhx02:/home/b/buccatm/project1% git checkout project2
+Switched to branch 'project2'
+]0;buccatm@uhx02:~/project1uhx02:/home/b/buccatm/project1% sh getreport.sh
+* f23b7ec [31m (HEAD, project2) [32m2020-04-18 [34mMarcos Buccat Jr [mMade the copy constrcutor only to copy data from maina list. And be able to print all of its data only in debugmode
+* a5d91f0 [31m [32m2020-04-16 [34mMarcos Buccat Jr [mImplemented The Copy Constructor
+* 2168d24 [31m [32m2020-04-14 [34mMarcos Buccat Jr [mSmall changes to the interface. still uses default contstructor
+* ed8f8e1 [31m [32m2020-04-14 [34mMarcos Buccat Jr [mChanged reverese so that it returns the new starting address rather than the address of the last element of list
+* 027c4ee [31m [32m2020-04-13 [34mMarcos Buccat Jr [mCopied files from proj 2
+* 10c4b67 [31m [32m2020-04-13 [34mMarcos Buccat Jr [mRenamed Files
+* 6a63668 [31m (Project1) [32m2020-03-17 [34mMarcos Buccat Jr [mAdded a message for addfile
+* 69e79bb [31m [32m2020-03-14 [34mMarcos Buccat Jr [mFixed most of the checkstlye errors
+* 72f9162 [31m [32m2020-03-14 [34mMarcos Buccat Jr [mFixed a bug
+* 2677797 [31m [32m2020-03-14 [34mMarcos Buccat Jr [mTypo in getreport.sh
+* 6bad449 [31m (master) [32m2020-03-14 [34mMarcos Buccat Jr [mProject 1
+# On branch project2
+nothing to commit, working directory clean
+total 224
+drwxr-xr-x.  3 buccatm uh  4096 Apr 18 13:35 .
+drwx-----x. 24 buccatm uh  8192 Apr 18 13:32 ..
+-rw-r--r--.  1 buccatm uh    39 Apr 18 13:35 add.txt
+-rw-r--r--.  1 buccatm uh   355 Apr 18 13:32 Copy_Data.txt
+-rw-r--r--.  1 buccatm uh 20656 Apr 18 13:35 database.o
+-rw-r--r--.  1 buccatm uh   388 Apr 18 13:32 default.txt
+-rwxr-xr-x.  1 buccatm uh   154 Mar 14 11:59 getreport.sh
+drwxr-xr-x.  8 buccatm uh   166 Apr 18 13:35 .git
+-rw-r--r--.  1 buccatm uh    47 Mar 14 11:41 .gitignore
+-rw-r--r--.  1 buccatm uh 37514 Apr 18 13:35 llist.cpp
+-rw-r--r--.  1 buccatm uh  1287 Apr 18 13:35 llist.h
+-rw-r--r--.  1 buccatm uh   454 Apr 18 13:35 Makefile
+-rwxr-xr-x.  1 buccatm uh 25928 Apr 18 13:35 project
+-rwxr-xr-x.  1 buccatm uh 40752 Apr 18 13:32 project_debug
+-rw-r--r--.  1 buccatm uh     0 Apr 18 13:35 proof.txt
+-rw-r--r--.  1 buccatm uh   783 Apr 18 13:35 record.h
+-rw-r--r--.  1 buccatm uh 26657 Apr 18 13:35 user-interface.cpp
+-rw-r--r--.  1 buccatm uh 15120 Apr 18 13:35 user_interface.o
+g++ -DDEBUG -ansi -pedantic-errors -Wall -c llist.cpp
+g++ -DDEBUG -ansi -pedantic-errors -Wall -c user-interface.cpp
+g++ -o project_debug llist.o user-interface.o
+g++ -ansi -pedantic-errors -Wall -c llist.cpp
+g++ -ansi -pedantic-errors -Wall -c user-interface.cpp
+g++ -o project llist.o user-interface.o
+]0;buccatm@uhx02:~/project1uhx02:/home/b/buccatm/project1% ./project
+
+	The Bank Interface
+
+Welcome to the Bank Menue
+
+Enter the Following for options
+
+	Enter '1' to add a record
+	Enter '2' to print a record
+	Enter '3' to print all records
+	Enter '4' to modify a record
+	Enter '5' to remove a record
+	Enter '6' Reverse list order
+	Enter '7' to exit the program
+
+Enter Input: 3
+
+	PRINT ALL RECORD
+
+
+ACCOUNTNO: 8976
+NAME: name one
+ADDRESS: address 
+one
+here
+
+
+ACCOUNTNO: 98
+NAME: LAST NAME HERE A TESST
+ADDRESS: SAME WITH THIS ONE
+A LONG ADDRESS
+IS OING TO BE
+INPUTED HERE
+TO SEE THE RESULT
+
+
+ACCOUNTNO: 56
+NAME: LAST NAME HERE A TESST
+ADDRESS: SAME WITH THIS ONE
+A LONG ADDRESS
+IS OING TO BE
+INPUTED HERE
+TO SEE THE RESULT
+
+
+ACCOUNTNO: 122
+NAME: name two
+ADDRESS: address
+two
+here
+
+
+ACCOUNTNO: 3333
+NAME: name three
+ADDRESS: addrss 3 here
+hon
+hi
+
+
+ACCOUNTNO: 444
+NAME: last name
+ADDRESS: last dress
+here
+
+
+ACCOUNTNO: 67
+NAME: Last Name
+ADDRESS: Last
+ADDRESS
+HERE
+HON
+HI
+ZIP
+
+
+Number of Records: 7
+
+
+Enter the Following for options
+	Enter '1' to add a record
+	Enter '2' to print a record
+	Enter '3' to print all records
+	Enter '4' to modify a record
+	Enter '5' to remove a record
+	Enter '6' Reverse list order
+	Enter '7' to exit the program
+
+Enter Input: 6
+Reverse list
+
+Enter the Following for options
+	Enter '1' to add a record
+	Enter '2' to print a record
+	Enter '3' to print all records
+	Enter '4' to modify a record
+	Enter '5' to remove a record
+	Enter '6' Reverse list order
+	Enter '7' to exit the program
+
+Enter Input: 3
+
+	PRINT ALL RECORD
+
+
+ACCOUNTNO: 67
+NAME: Last Name
+ADDRESS: Last
+ADDRESS
+HERE
+HON
+HI
+ZIP
+
+
+ACCOUNTNO: 444
+NAME: last name
+ADDRESS: last dress
+here
+
+
+ACCOUNTNO: 3333
+NAME: name three
+ADDRESS: addrss 3 here
+hon
+hi
+
+
+ACCOUNTNO: 122
+NAME: name two
+ADDRESS: address
+two
+here
+
+
+ACCOUNTNO: 56
+NAME: LAST NAME HERE A TESST
+ADDRESS: SAME WITH THIS ONE
+A LONG ADDRESS
+IS OING TO BE
+INPUTED HERE
+TO SEE THE RESULT
+
+
+ACCOUNTNO: 98
+NAME: LAST NAME HERE A TESST
+ADDRESS: SAME WITH THIS ONE
+A LONG ADDRESS
+IS OING TO BE
+INPUTED HERE
+TO SEE THE RESULT
+
+
+ACCOUNTNO: 8976
+NAME: name one
+ADDRESS: address 
+one
+here
+
+
+Number of Records: 7
+
+
+Enter the Following for options
+	Enter '1' to add a record
+	Enter '2' to print a record
+	Enter '3' to print all records
+	Enter '4' to modify a record
+	Enter '5' to remove a record
+	Enter '6' Reverse list order
+	Enter '7' to exit the program
+
+Enter Input: 7
+
+	EXITING PROGRAM
+
+]0;buccatm@uhx02:~/project1uhx02:/home/b/buccatm/project1% ./projecte_debug[K[K[K[K[K[K[K_debug
+
+	DEBUG MODE ENABLE
+
+Creating Default Contruct
+
+file to read: default.txt
+
+
+================ DEBUG MODE ===================
+Reading File
+Starting Address: 0
+
+The file exits!
+RECORD# 1
+
+================ DEBUG MODE ===================
+START :0
+
+Creating RECORD to add
+
+TEMP: 0x1b3d260
+Accountno: 67
+Name: Last Name
+Address: Last
+ADDRESS
+HERE
+HON
+HI
+ZIP
+NEXT: 0
+
+Adding record to empty list
+
+NEW START: 0x1b3d260
+Exiting AddRecord
+
+================ EXIT FUNCTION ===================
+
+RECORD# 2
+
+================ DEBUG MODE ===================
+START :0x1b3d260
+
+Creating RECORD to add
+
+TEMP: 0x1b3d2e0
+Accountno: 444
+Name: last name
+Address: last dress
+here
+NEXT: 0
+
+Current Start: 0x1b3d260
+
+NEW START: 0x1b3d260
+Exiting AddRecord
+
+================ EXIT FUNCTION ===================
+
+RECORD# 3
+
+================ DEBUG MODE ===================
+START :0x1b3d260
+
+Creating RECORD to add
+
+TEMP: 0x1b3d360
+Accountno: 3333
+Name: name three
+Address: addrss 3 here
+hon
+hi
+NEXT: 0
+
+Current Start: 0x1b3d260
+
+Traversing to the end
+Current index: 0x1b3d260
+
+Next index: 0x1b3d2e0
+
+NEW START: 0x1b3d260
+Exiting AddRecord
+
+================ EXIT FUNCTION ===================
+
+RECORD# 4
+
+================ DEBUG MODE ===================
+START :0x1b3d260
+
+Creating RECORD to add
+
+TEMP: 0x1b3d3e0
+Accountno: 122
+Name: name two
+Address: address
+two
+here
+NEXT: 0
+
+Current Start: 0x1b3d260
+
+Traversing to the end
+Current index: 0x1b3d260
+
+Next index: 0x1b3d2e0
+
+Traversing to the end
+Current index: 0x1b3d2e0
+
+Next index: 0x1b3d360
+
+NEW START: 0x1b3d260
+Exiting AddRecord
+
+================ EXIT FUNCTION ===================
+
+RECORD# 5
+
+================ DEBUG MODE ===================
+START :0x1b3d260
+
+Creating RECORD to add
+
+TEMP: 0x1b3d460
+Accountno: 56
+Name: LAST NAME HERE A TESST
+Address: SAME WITH THIS ONE
+A LONG ADDRESS
+IS OING TO BE
+INPUTED HERE
+TO SEE THE RESULT
+NEXT: 0
+
+Current Start: 0x1b3d260
+
+Traversing to the end
+Current index: 0x1b3d260
+
+Next index: 0x1b3d2e0
+
+Traversing to the end
+Current index: 0x1b3d2e0
+
+Next index: 0x1b3d360
+
+Traversing to the end
+Current index: 0x1b3d360
+
+Next index: 0x1b3d3e0
+
+NEW START: 0x1b3d260
+Exiting AddRecord
+
+================ EXIT FUNCTION ===================
+
+RECORD# 6
+
+================ DEBUG MODE ===================
+START :0x1b3d260
+
+Creating RECORD to add
+
+TEMP: 0x1b3d4e0
+Accountno: 98
+Name: LAST NAME HERE A TESST
+Address: SAME WITH THIS ONE
+A LONG ADDRESS
+IS OING TO BE
+INPUTED HERE
+TO SEE THE RESULT
+NEXT: 0
+
+Current Start: 0x1b3d260
+
+Traversing to the end
+Current index: 0x1b3d260
+
+Next index: 0x1b3d2e0
+
+Traversing to the end
+Current index: 0x1b3d2e0
+
+Next index: 0x1b3d360
+
+Traversing to the end
+Current index: 0x1b3d360
+
+Next index: 0x1b3d3e0
+
+Traversing to the end
+Current index: 0x1b3d3e0
+
+Next index: 0x1b3d460
+
+NEW START: 0x1b3d260
+Exiting AddRecord
+
+================ EXIT FUNCTION ===================
+
+RECORD# 7
+
+================ DEBUG MODE ===================
+START :0x1b3d260
+
+Creating RECORD to add
+
+TEMP: 0x1b3d560
+Accountno: 8976
+Name: name one
+Address: address 
+one
+here
+NEXT: 0
+
+Current Start: 0x1b3d260
+
+Traversing to the end
+Current index: 0x1b3d260
+
+Next index: 0x1b3d2e0
+
+Traversing to the end
+Current index: 0x1b3d2e0
+
+Next index: 0x1b3d360
+
+Traversing to the end
+Current index: 0x1b3d360
+
+Next index: 0x1b3d3e0
+
+Traversing to the end
+Current index: 0x1b3d3e0
+
+Next index: 0x1b3d460
+
+Traversing to the end
+Current index: 0x1b3d460
+
+Next index: 0x1b3d4e0
+
+NEW START: 0x1b3d260
+Exiting AddRecord
+
+================ EXIT FUNCTION ===================
+
+Counter: 7
+START: 0x1b3d260
+Exiting ReadFile
+
+================ EXIT FUNCTION ===================
+
+Exiting Default Constructor
+
+================ EXIT FUNCTION ===================
+
+================ DEBUG MODE ===================
+Copy Constructor
+Position at orginal LIST: 0x1b3d260
+Start: 0
+PREVIOUS POS: 0
+Temp: 0
+
+Position at orginal LIST: 0x1b3d2e0
+Start: 0x1b3b010
+PREVIOUS POS: 0x1b3b010
+Temp: 0x1b3b090
+
+Position at orginal LIST: 0x1b3d360
+Start: 0x1b3b010
+PREVIOUS POS: 0x1b3b090
+Temp: 0x1b3b110
+
+Position at orginal LIST: 0x1b3d3e0
+Start: 0x1b3b010
+PREVIOUS POS: 0x1b3b110
+Temp: 0x1b3b190
+
+Position at orginal LIST: 0x1b3d460
+Start: 0x1b3b010
+PREVIOUS POS: 0x1b3b190
+Temp: 0x1b3b210
+
+Position at orginal LIST: 0x1b3d4e0
+Start: 0x1b3b010
+PREVIOUS POS: 0x1b3b210
+Temp: 0x1b3b290
+
+Position at orginal LIST: 0x1b3d560
+Start: 0x1b3b010
+PREVIOUS POS: 0x1b3b290
+Temp: 0x1b3b310
+
+Exit Copy Constructor
+
+================ EXIT FUNCTION ===================
+
+========================== DEBUG MODE ============================
+User-interface function
+
+DATA OF COPY CONSTRUCTOR
+
+
+================ DEBUG MODE ===================
+PRinting All function, overloaded operator
+starting Address:0x1b3b010
+
+Current Address: 0x1b3b010
+ADDRESS: 0x1b3b010
+ACCOUNTNO: 67
+NAME: Last Name
+ADDRESS: Last
+ADDRESS
+HERE
+HON
+HI
+ZIP
+NEXT:0x1b3b090
+
+
+Current Address: 0x1b3b090
+ADDRESS: 0x1b3b090
+ACCOUNTNO: 444
+NAME: last name
+ADDRESS: last dress
+here
+NEXT:0x1b3b110
+
+
+Current Address: 0x1b3b110
+ADDRESS: 0x1b3b110
+ACCOUNTNO: 3333
+NAME: name three
+ADDRESS: addrss 3 here
+hon
+hi
+NEXT:0x1b3b190
+
+
+Current Address: 0x1b3b190
+ADDRESS: 0x1b3b190
+ACCOUNTNO: 122
+NAME: name two
+ADDRESS: address
+two
+here
+NEXT:0x1b3b210
+
+
+Current Address: 0x1b3b210
+ADDRESS: 0x1b3b210
+ACCOUNTNO: 56
+NAME: LAST NAME HERE A TESST
+ADDRESS: SAME WITH THIS ONE
+A LONG ADDRESS
+IS OING TO BE
+INPUTED HERE
+TO SEE THE RESULT
+NEXT:0x1b3b290
+
+
+Current Address: 0x1b3b290
+ADDRESS: 0x1b3b290
+ACCOUNTNO: 98
+NAME: LAST NAME HERE A TESST
+ADDRESS: SAME WITH THIS ONE
+A LONG ADDRESS
+IS OING TO BE
+INPUTED HERE
+TO SEE THE RESULT
+NEXT:0x1b3b310
+
+
+Current Address: 0x1b3b310
+ADDRESS: 0x1b3b310
+ACCOUNTNO: 8976
+NAME: name one
+ADDRESS: address 
+one
+here
+NEXT:0
+
+
+Number of Records: 7
+
+Exiting ostream
+
+================ EXIT FUNCTION ===================
+
+
+
+	The Bank Interface
+
+Welcome to the Bank Menue
+
+Enter the Following for options
+
+	Enter '1' to add a record
+	Enter '2' to print a record
+	Enter '3' to print all records
+	Enter '4' to modify a record
+	Enter '5' to remove a record
+	Enter '6' Reverse list order
+	Enter '7' to exit the program
+
+Enter Input: 
+========================== DEBUG MODE ============================
+get_input function
+Last input in ARRAY:  
+Size of Array To Convert: 0x7ffecb3cae90 = 0
+6
+index[0]: 6
+Size of Input: 1
+
+END OF GET INPUT
+====================== EXIT FUNCTION =============================
+
+
+========================== DEBUG MODE ============================
+check input function
+PASSING:
+ARRAY: 6
+number ADDRESS: 0x7ffecb3cae9c, val = 0
+letter ADDRESS: 0x7ffecb3cae98, val = 0
+special ADDRESS: 0x7ffecb3cae94, val = 0
+Checking for Getting input
+index[0]: 6, nums + 1 = 1
+Number of Special Chars: 0
+Number of Numbers: 1
+Number of letters: 0
+
+END OF CHECK INPUT
+======================== EXIT FUNCTION =============================
+
+
+========================== DEBUG MODE ============================
+extract function
+EXTRACT ARRAY 6
+Store 0x7ffecb3c9dd0
+Size of Array To Extract: 1
+INDEX[0]: 6
+END OF EXTRACT
+======================== EXIT FUNCTION ===========================
+
+
+========================== DEBUG MODE ============================
+Convert function
+ARRAY to Convert 0x7ffecb3c9dd0
+Size of Array To Convert: 1
+power: 0
+Total: 0
+power: 0
+Base^[0] = 1
+total = 1 * 6 + 0
+Value: 6
+
+END OF CONVERT
+======================== EXIT FUNCTION =============================
+
+input: 6
+
+Reverse list
+
+================ DEBUG MODE ===================
+RECURSIVE REVERESE FUNCTION:
+Starting Address: 0x1b3d260
+
+Current pointer: 0x1b3d2e0
+NEXT: 0x1b3d360
+Recursive call
+
+
+================ DEBUG MODE ===================
+RECURSIVE REVERESE FUNCTION:
+Starting Address: 0x1b3d2e0
+
+Current pointer: 0x1b3d360
+NEXT: 0x1b3d3e0
+Recursive call
+
+
+================ DEBUG MODE ===================
+RECURSIVE REVERESE FUNCTION:
+Starting Address: 0x1b3d360
+
+Current pointer: 0x1b3d3e0
+NEXT: 0x1b3d460
+Recursive call
+
+
+================ DEBUG MODE ===================
+RECURSIVE REVERESE FUNCTION:
+Starting Address: 0x1b3d3e0
+
+Current pointer: 0x1b3d460
+NEXT: 0x1b3d4e0
+Recursive call
+
+
+================ DEBUG MODE ===================
+RECURSIVE REVERESE FUNCTION:
+Starting Address: 0x1b3d460
+
+Current pointer: 0x1b3d4e0
+NEXT: 0x1b3d560
+Recursive call
+
+
+================ DEBUG MODE ===================
+RECURSIVE REVERESE FUNCTION:
+Starting Address: 0x1b3d4e0
+
+Current pointer: 0x1b3d560
+NEXT: 0
+AT the end of list
+RETURNING: 0x1b3d4e0
+
+Exiting Recursive Reverse(record *)
+
+================ EXIT FUNCTION ===================
+
+RETURN VAL AFTER RECURSIVE CALL: 0x1b3d4e0
+RETURNING: 0x1b3d460
+
+Exiting Recursive Reverse(record *)
+
+================ EXIT FUNCTION ===================
+
+RETURN VAL AFTER RECURSIVE CALL: 0x1b3d460
+RETURNING: 0x1b3d3e0
+
+Exiting Recursive Reverse(record *)
+
+================ EXIT FUNCTION ===================
+
+RETURN VAL AFTER RECURSIVE CALL: 0x1b3d3e0
+RETURNING: 0x1b3d360
+
+Exiting Recursive Reverse(record *)
+
+================ EXIT FUNCTION ===================
+
+RETURN VAL AFTER RECURSIVE CALL: 0x1b3d360
+RETURNING: 0x1b3d2e0
+
+Exiting Recursive Reverse(record *)
+
+================ EXIT FUNCTION ===================
+
+RETURN VAL AFTER RECURSIVE CALL: 0x1b3d2e0
+RETURNING: 0x1b3d560
+
+Exiting Recursive Reverse(record *)
+
+================ EXIT FUNCTION ===================
+
+
+================ DEBUG MODE ===================
+REVERSE FUNCTION WITHOUT PARAMATER
+NEW START: 0x1b3d560
+Exit reverse()
+
+================ EXIT FUNCTION ===================
+
+
+Enter the Following for options
+	Enter '1' to add a record
+	Enter '2' to print a record
+	Enter '3' to print all records
+	Enter '4' to modify a record
+	Enter '5' to remove a record
+	Enter '6' Reverse list order
+	Enter '7' to exit the program
+
+Enter Input: 
+========================== DEBUG MODE ============================
+get_input function
+Last input in ARRAY: 6
+Size of Array To Convert: 0x7ffecb3cae90 = 0
+3
+index[0]: 3
+Size of Input: 1
+
+END OF GET INPUT
+====================== EXIT FUNCTION =============================
+
+
+========================== DEBUG MODE ============================
+check input function
+PASSING:
+ARRAY: 3
+number ADDRESS: 0x7ffecb3cae9c, val = 0
+letter ADDRESS: 0x7ffecb3cae98, val = 0
+special ADDRESS: 0x7ffecb3cae94, val = 0
+Checking for Getting input
+index[0]: 3, nums + 1 = 1
+Number of Special Chars: 0
+Number of Numbers: 1
+Number of letters: 0
+
+END OF CHECK INPUT
+======================== EXIT FUNCTION =============================
+
+
+========================== DEBUG MODE ============================
+extract function
+EXTRACT ARRAY 3
+Store 0x7ffecb3c9dd0
+Size of Array To Extract: 1
+INDEX[0]: 3
+END OF EXTRACT
+======================== EXIT FUNCTION ===========================
+
+
+========================== DEBUG MODE ============================
+Convert function
+ARRAY to Convert 0x7ffecb3c9dd0
+Size of Array To Convert: 1
+power: 0
+Total: 0
+power: 0
+Base^[0] = 1
+total = 1 * 3 + 0
+Value: 3
+
+END OF CONVERT
+======================== EXIT FUNCTION =============================
+
+input: 3
+
+
+	PRINT ALL RECORD
+
+
+
+================ DEBUG MODE ===================
+PRinting All function, overloaded operator
+starting Address:0x1b3d560
+
+Current Address: 0x1b3d560
+ADDRESS: 0x1b3d560
+ACCOUNTNO: 8976
+NAME: name one
+ADDRESS: address 
+one
+here
+NEXT:0x1b3d4e0
+
+
+Current Address: 0x1b3d4e0
+ADDRESS: 0x1b3d4e0
+ACCOUNTNO: 98
+NAME: LAST NAME HERE A TESST
+ADDRESS: SAME WITH THIS ONE
+A LONG ADDRESS
+IS OING TO BE
+INPUTED HERE
+TO SEE THE RESULT
+NEXT:0x1b3d460
+
+
+Current Address: 0x1b3d460
+ADDRESS: 0x1b3d460
+ACCOUNTNO: 56
+NAME: LAST NAME HERE A TESST
+ADDRESS: SAME WITH THIS ONE
+A LONG ADDRESS
+IS OING TO BE
+INPUTED HERE
+TO SEE THE RESULT
+NEXT:0x1b3d3e0
+
+
+Current Address: 0x1b3d3e0
+ADDRESS: 0x1b3d3e0
+ACCOUNTNO: 122
+NAME: name two
+ADDRESS: address
+two
+here
+NEXT:0x1b3d360
+
+
+Current Address: 0x1b3d360
+ADDRESS: 0x1b3d360
+ACCOUNTNO: 3333
+NAME: name three
+ADDRESS: addrss 3 here
+hon
+hi
+NEXT:0x1b3d2e0
+
+
+Current Address: 0x1b3d2e0
+ADDRESS: 0x1b3d2e0
+ACCOUNTNO: 444
+NAME: last name
+ADDRESS: last dress
+here
+NEXT:0x1b3d260
+
+
+Current Address: 0x1b3d260
+ADDRESS: 0x1b3d260
+ACCOUNTNO: 67
+NAME: Last Name
+ADDRESS: Last
+ADDRESS
+HERE
+HON
+HI
+ZIP
+NEXT:0
+
+
+Number of Records: 7
+
+Exiting ostream
+
+================ EXIT FUNCTION ===================
+
+
+Enter the Following for options
+	Enter '1' to add a record
+	Enter '2' to print a record
+	Enter '3' to print all records
+	Enter '4' to modify a record
+	Enter '5' to remove a record
+	Enter '6' Reverse list order
+	Enter '7' to exit the program
+
+Enter Input: 
+========================== DEBUG MODE ============================
+get_input function
+Last input in ARRAY: 3
+Size of Array To Convert: 0x7ffecb3cae90 = 0
+5
+index[0]: 5
+Size of Input: 1
+
+END OF GET INPUT
+====================== EXIT FUNCTION =============================
+
+
+========================== DEBUG MODE ============================
+check input function
+PASSING:
+ARRAY: 5
+number ADDRESS: 0x7ffecb3cae9c, val = 0
+letter ADDRESS: 0x7ffecb3cae98, val = 0
+special ADDRESS: 0x7ffecb3cae94, val = 0
+Checking for Getting input
+index[0]: 5, nums + 1 = 1
+Number of Special Chars: 0
+Number of Numbers: 1
+Number of letters: 0
+
+END OF CHECK INPUT
+======================== EXIT FUNCTION =============================
+
+
+========================== DEBUG MODE ============================
+extract function
+EXTRACT ARRAY 5
+Store 0x7ffecb3c9dd0
+Size of Array To Extract: 1
+INDEX[0]: 5
+END OF EXTRACT
+======================== EXIT FUNCTION ===========================
+
+
+========================== DEBUG MODE ============================
+Convert function
+ARRAY to Convert 0x7ffecb3c9dd0
+Size of Array To Convert: 1
+power: 0
+Total: 0
+power: 0
+Base^[0] = 1
+total = 1 * 5 + 0
+Value: 5
+
+END OF CONVERT
+======================== EXIT FUNCTION =============================
+
+input: 5
+
+
+	REMOVE Records
+Enter Account Number: 
+========================== DEBUG MODE ============================
+get_input function
+Last input in ARRAY: 5
+Size of Array To Convert: 0x7ffecb3cae90 = 1
+7 67
+index[0]: 6
+index[1]: 7
+Size of Input: 2
+
+END OF GET INPUT
+====================== EXIT FUNCTION =============================
+
+
+========================== DEBUG MODE ============================
+check input function
+PASSING:
+ARRAY: 67
+number ADDRESS: 0x7ffecb3cae9c, val = 1
+letter ADDRESS: 0x7ffecb3cae98, val = 0
+special ADDRESS: 0x7ffecb3cae94, val = 0
+Checking for Getting input
+index[0]: 6, nums + 1 = 1
+index[1]: 7, nums + 1 = 2
+Number of Special Chars: 0
+Number of Numbers: 2
+Number of letters: 0
+
+END OF CHECK INPUT
+======================== EXIT FUNCTION =============================
+
+
+========================== DEBUG MODE ============================
+extract function
+EXTRACT ARRAY 67
+Store 0x7ffecb3c9dd0
+Size of Array To Extract: 2
+INDEX[0]: 6
+INDEX[1]: 7
+END OF EXTRACT
+======================== EXIT FUNCTION ===========================
+
+
+========================== DEBUG MODE ============================
+Convert function
+ARRAY to Convert 0x7ffecb3c9dd0
+Size of Array To Convert: 2
+power: 0
+Total: 0
+power: 0
+Base^[0] = 1
+total = 1 * 7 + 0
+power: 1
+Base^[1] = 10
+total = 10 * 6 + 7
+Value: 67
+
+END OF CONVERT
+======================== EXIT FUNCTION =============================
+
+
+================ DEBUG MODE ===================
+Entered Delete Record
+
+Delete all record With this Accountno: 67
+
+Starting index: 0x1b3d560
+
+
+Current index: 0x1b3d560
+NEXT: 0x1b3d4e0
+
+
+Current index: 0x1b3d4e0
+
+Current index: 0x1b3d560
+NEXT: 0x1b3d460
+
+
+Current index: 0x1b3d460
+
+Current index: 0x1b3d560
+NEXT: 0x1b3d3e0
+
+
+Current index: 0x1b3d3e0
+
+Current index: 0x1b3d560
+NEXT: 0x1b3d360
+
+
+Current index: 0x1b3d360
+
+Current index: 0x1b3d560
+NEXT: 0x1b3d2e0
+
+
+Current index: 0x1b3d2e0
+
+Current index: 0x1b3d560
+NEXT: 0x1b3d260
+
+Record Found!
+
+NEW NEXT: 0
+Remove: 0x1b3d260
+
+End of list
+
+Number of Records Removed: 1
+Exiting DeleteRecord
+
+================ EXIT FUNCTION ===================
+
+
+Enter the Following for options
+	Enter '1' to add a record
+	Enter '2' to print a record
+	Enter '3' to print all records
+	Enter '4' to modify a record
+	Enter '5' to remove a record
+	Enter '6' Reverse list order
+	Enter '7' to exit the program
+
+Enter Input: 
+========================== DEBUG MODE ============================
+get_input function
+Last input in ARRAY: 67
+Size of Array To Convert: 0x7ffecb3cae90 = 0
+3
+index[0]: 3
+Size of Input: 1
+
+END OF GET INPUT
+====================== EXIT FUNCTION =============================
+
+
+========================== DEBUG MODE ============================
+check input function
+PASSING:
+ARRAY: 3
+number ADDRESS: 0x7ffecb3cae9c, val = 0
+letter ADDRESS: 0x7ffecb3cae98, val = 0
+special ADDRESS: 0x7ffecb3cae94, val = 0
+Checking for Getting input
+index[0]: 3, nums + 1 = 1
+Number of Special Chars: 0
+Number of Numbers: 1
+Number of letters: 0
+
+END OF CHECK INPUT
+======================== EXIT FUNCTION =============================
+
+
+========================== DEBUG MODE ============================
+extract function
+EXTRACT ARRAY 3
+Store 0x7ffecb3c9dd0
+Size of Array To Extract: 1
+INDEX[0]: 3
+END OF EXTRACT
+======================== EXIT FUNCTION ===========================
+
+
+========================== DEBUG MODE ============================
+Convert function
+ARRAY to Convert 0x7ffecb3c9dd0
+Size of Array To Convert: 1
+power: 0
+Total: 0
+power: 0
+Base^[0] = 1
+total = 1 * 3 + 0
+Value: 3
+
+END OF CONVERT
+======================== EXIT FUNCTION =============================
+
+input: 3
+
+
+	PRINT ALL RECORD
+
+
+
+================ DEBUG MODE ===================
+PRinting All function, overloaded operator
+starting Address:0x1b3d560
+
+Current Address: 0x1b3d560
+ADDRESS: 0x1b3d560
+ACCOUNTNO: 8976
+NAME: name one
+ADDRESS: address 
+one
+here
+NEXT:0x1b3d4e0
+
+
+Current Address: 0x1b3d4e0
+ADDRESS: 0x1b3d4e0
+ACCOUNTNO: 98
+NAME: LAST NAME HERE A TESST
+ADDRESS: SAME WITH THIS ONE
+A LONG ADDRESS
+IS OING TO BE
+INPUTED HERE
+TO SEE THE RESULT
+NEXT:0x1b3d460
+
+
+Current Address: 0x1b3d460
+ADDRESS: 0x1b3d460
+ACCOUNTNO: 56
+NAME: LAST NAME HERE A TESST
+ADDRESS: SAME WITH THIS ONE
+A LONG ADDRESS
+IS OING TO BE
+INPUTED HERE
+TO SEE THE RESULT
+NEXT:0x1b3d3e0
+
+
+Current Address: 0x1b3d3e0
+ADDRESS: 0x1b3d3e0
+ACCOUNTNO: 122
+NAME: name two
+ADDRESS: address
+two
+here
+NEXT:0x1b3d360
+
+
+Current Address: 0x1b3d360
+ADDRESS: 0x1b3d360
+ACCOUNTNO: 3333
+NAME: name three
+ADDRESS: addrss 3 here
+hon
+hi
+NEXT:0x1b3d2e0
+
+
+Current Address: 0x1b3d2e0
+ADDRESS: 0x1b3d2e0
+ACCOUNTNO: 444
+NAME: last name
+ADDRESS: last dress
+here
+NEXT:0
+
+
+Number of Records: 6
+
+Exiting ostream
+
+================ EXIT FUNCTION ===================
+
+
+Enter the Following for options
+	Enter '1' to add a record
+	Enter '2' to print a record
+	Enter '3' to print all records
+	Enter '4' to modify a record
+	Enter '5' to remove a record
+	Enter '6' Reverse list order
+	Enter '7' to exit the program
+
+Enter Input: 
+========================== DEBUG MODE ============================
+get_input function
+Last input in ARRAY: 3
+Size of Array To Convert: 0x7ffecb3cae90 = 0
+7
+index[0]: 7
+Size of Input: 1
+
+END OF GET INPUT
+====================== EXIT FUNCTION =============================
+
+
+========================== DEBUG MODE ============================
+check input function
+PASSING:
+ARRAY: 7
+number ADDRESS: 0x7ffecb3cae9c, val = 0
+letter ADDRESS: 0x7ffecb3cae98, val = 0
+special ADDRESS: 0x7ffecb3cae94, val = 0
+Checking for Getting input
+index[0]: 7, nums + 1 = 1
+Number of Special Chars: 0
+Number of Numbers: 1
+Number of letters: 0
+
+END OF CHECK INPUT
+======================== EXIT FUNCTION =============================
+
+
+========================== DEBUG MODE ============================
+extract function
+EXTRACT ARRAY 7
+Store 0x7ffecb3c9dd0
+Size of Array To Extract: 1
+INDEX[0]: 7
+END OF EXTRACT
+======================== EXIT FUNCTION ===========================
+
+
+========================== DEBUG MODE ============================
+Convert function
+ARRAY to Convert 0x7ffecb3c9dd0
+Size of Array To Convert: 1
+power: 0
+Total: 0
+power: 0
+Base^[0] = 1
+total = 1 * 7 + 0
+Value: 7
+
+END OF CONVERT
+======================== EXIT FUNCTION =============================
+
+input: 7
+
+
+	EXITING PROGRAM
+
+END OF INTERFACE
+======================== EXIT FUNCTION ===========================
+
+
+================ DEBUG MODE ===================
+	Destroying the list
+
+
+================ DEBUG MODE ===================
+Writing data to file: Copy_Data.txt
+
+Starting Address: 0x1b3b010
+
+Traversing list
+Current index: 0x1b3b090
+
+Traversing list
+Current index: 0x1b3b110
+
+Traversing list
+Current index: 0x1b3b190
+
+Traversing list
+Current index: 0x1b3b210
+
+Traversing list
+Current index: 0x1b3b290
+
+Traversing list
+Current index: 0x1b3b310
+
+Traversing list
+Current index: 0
+
+Number of Recs Writen to file: 7
+Exiting Write Function
+
+================ EXIT FUNCTION ===================
+
+
+================ DEBUG MODE ===================
+CLEAN UP
+Starting Address: 0x1b3b010
+
+Cleaning up the heap space
+Current Index: 0x1b3b010
+NEXT: 0x1b3b090
+REMOVE: 0x1b3b010
+
+Cleaning up the heap space
+Current Index: 0x1b3b090
+NEXT: 0x1b3b110
+REMOVE: 0x1b3b090
+
+Cleaning up the heap space
+Current Index: 0x1b3b110
+NEXT: 0x1b3b190
+REMOVE: 0x1b3b110
+
+Cleaning up the heap space
+Current Index: 0x1b3b190
+NEXT: 0x1b3b210
+REMOVE: 0x1b3b190
+
+Cleaning up the heap space
+Current Index: 0x1b3b210
+NEXT: 0x1b3b290
+REMOVE: 0x1b3b210
+
+Cleaning up the heap space
+Current Index: 0x1b3b290
+NEXT: 0x1b3b310
+REMOVE: 0x1b3b290
+
+Current Index: 0x1b3b310
+NEXT: 0
+REMOVE: 0x1b3b310
+
+Amount Of Records Removed: 7
+START: 0
+Exiting DeleteRecord
+
+================ EXIT FUNCTION ===================
+
+	EXITING DECONSTRUCTOR
+
+================ EXIT FUNCTION ===================
+
+================ DEBUG MODE ===================
+	Destroying the list
+
+
+================ DEBUG MODE ===================
+Writing data to file: default.txt
+
+Starting Address: 0x1b3d560
+
+Traversing list
+Current index: 0x1b3d4e0
+
+Traversing list
+Current index: 0x1b3d460
+
+Traversing list
+Current index: 0x1b3d3e0
+
+Traversing list
+Current index: 0x1b3d360
+
+Traversing list
+Current index: 0x1b3d2e0
+
+Traversing list
+Current index: 0
+
+Number of Recs Writen to file: 6
+Exiting Write Function
+
+================ EXIT FUNCTION ===================
+
+
+================ DEBUG MODE ===================
+CLEAN UP
+Starting Address: 0x1b3d560
+
+Cleaning up the heap space
+Current Index: 0x1b3d560
+NEXT: 0x1b3d4e0
+REMOVE: 0x1b3d560
+
+Cleaning up the heap space
+Current Index: 0x1b3d4e0
+NEXT: 0x1b3d460
+REMOVE: 0x1b3d4e0
+
+Cleaning up the heap space
+Current Index: 0x1b3d460
+NEXT: 0x1b3d3e0
+REMOVE: 0x1b3d460
+
+Cleaning up the heap space
+Current Index: 0x1b3d3e0
+NEXT: 0x1b3d360
+REMOVE: 0x1b3d3e0
+
+Cleaning up the heap space
+Current Index: 0x1b3d360
+NEXT: 0x1b3d2e0
+REMOVE: 0x1b3d360
+
+Current Index: 0x1b3d2e0
+NEXT: 0
+REMOVE: 0x1b3d2e0
+
+Amount Of Records Removed: 6
+START: 0
+Exiting DeleteRecord
+
+================ EXIT FUNCTION ===================
+
+	EXITING DECONSTRUCTOR
+
+================ EXIT FUNCTION ===================
+]0;buccatm@uhx02:~/project1uhx02:/home/b/buccatm/project1% exit
+exit
+
+Script done on Sat 18 Apr 2020 01:37:04 PM HST
